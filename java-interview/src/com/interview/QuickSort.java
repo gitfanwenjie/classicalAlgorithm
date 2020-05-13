@@ -61,4 +61,21 @@ public class QuickSort {
         array[i] = array[j];
         array[j] = temp;
     }
+    
+	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		int[] array = {12,14,2,5,3,6,99};
+		System.out.println("快速排序前：");
+		for(int index:array) {
+			System.out.print(index+",");
+		}
+		System.out.println("\n快速排序后：");
+		quickSort(array,0,array.length-1);
+		for(int indexed:array) {
+			System.out.print(indexed+",");
+		}
+		System.out.println("");
+		long end = System.currentTimeMillis();
+		System.out.println("消耗时间："+(end-start)+"毫秒");
+	}
 }

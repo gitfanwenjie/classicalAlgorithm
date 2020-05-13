@@ -77,7 +77,5 @@ public class QuickSort {
 		System.out.println("");
 		long end = System.currentTimeMillis();
 		System.out.println("消耗时间："+(end-start)+"毫秒");
-		// git修改测试666666666666666666
-		// 99999999999999999999999999999
 	}
 }
